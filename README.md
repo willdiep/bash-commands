@@ -1,0 +1,1 @@
+Add script in zshrc file at the bottom of your `.zshrc` or `.bashrc` file
