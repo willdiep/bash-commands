@@ -22,3 +22,13 @@ trash-empty() {
   rm -rf ~/.Trash/*
   echo "Trash directory has been emptied"
 }
+
+caches-empty() {
+  cd ~/Library/Caches
+  if [ "$(ls -A .)" ]; then
+    rm -rf *
+    echo "Cache directory emptied."
+  else
+    echo "Cache directory is already empty."
+  fi
+}
